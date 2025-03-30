@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "TrueCred_backend": {
+      "main": "src/TrueCred_backend/main.mo",
+      "type": "motoko"
+    },
+    "TrueCred_frontend": {
+      "dependencies": [
+        "TrueCred_backend"
+      ],
+      "source": [
+        "src/TrueCred_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "TrueCred_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
